@@ -17,7 +17,7 @@ const fillDataBase = async () => {
       useUnifiedTopology: true
     })
     console.log(`Connected to the database"`);
-     Recipe.deleteMany()
+    /* Recipe.deleteMany()
 
     const recipe =
     {
@@ -32,9 +32,9 @@ const fillDataBase = async () => {
     }
 
     const createdRecipe = await Recipe.create(recipe);
-    console.log(createdRecipe); 
+    console.log(createdRecipe);  
 
-    const createdRecipe = await Recipe.insertMany(data)
+    const createdRecipeMany = await Recipe.insertMany(data)
    const updateRecipe = await Recipe.findOneAndUpdate(
       {title: "Rigatoni alla Genovese"},
       {duration: 100}
@@ -42,6 +42,7 @@ const fillDataBase = async () => {
     const deleteReceipe = await Recipe.deleteOne(
       {title:"Carrot Cake"}
     )
+    */
   }
   catch (error) {
     console.log(error)
